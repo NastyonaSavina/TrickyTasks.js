@@ -1,0 +1,2 @@
+(e=>{let t={object:[],number:[],string:[],boolean:[],null:[],undefined:[],array:[],date:[]};for(let a=0;a<e.length;a++)null===e[a]?t.null.push(null):Array.isArray(e[a])?t.array.push(e[a]):e[a]instanceof Date&&!isNaN(e[a])?t.date.push(e[a]):t[typeof e[a]].push(e[a])})([{value:1},{value:2},5,6,7,"test","test2","test3","test4",!1,null,void 0,[123],[456],new Date("2021-06-22"),new Date("2022-02-01")]);
+//# sourceMappingURL=index.cb71dca3.js.map
