@@ -31,5 +31,19 @@
 
 
 const sorting = (array) => {
+    let object= [];
+    let number= [];
+    let string = [];
+    let boolean = [];
+    let nulle = [];
+    let undefined = [];
+    let array= [];
+    let date = [];
+
+    for (let i = 0; i < array.lenght; i++){
+        console.log(typeof array[i]);
+    }
     
 }
+
+sorting(arr);
