@@ -2,6 +2,7 @@ function getKeysArray(obj) {
   let str = [];
 
   for (const key in obj) {
+
     let mainKey = key;
     let itemValue = obj[key];
     let secondKeys = [];

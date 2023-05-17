@@ -1,21 +1,21 @@
-// const arr = [
-//   { value: 1 },
-//   { value: 2 },
-//   5,
-//   6,
-//   7,
-//   'test',
-//   'test2',
-//   'test3',
-//   'test4',
-//   false,
-//   null,
-//   undefined,
-//   [123],
-//   [456],
-//   new Date('2021-06-22'),
-//   new Date('2022-02-01'),
-// ];
+const arr = [
+  { value: 1 },
+  { value: 2 },
+  5,
+  6,
+  7,
+  'test',
+  'test2',
+  'test3',
+  'test4',
+  false,
+  null,
+  undefined,
+  [123],
+  [456],
+  new Date('2021-06-22'),
+  new Date('2022-02-01'),
+];
 
 // Ожидаемый результат
 // {
@@ -30,20 +30,46 @@
 // }
 
 
-const sorting = (array) => {
-    let object= [];
-    let number= [];
-    let string = [];
-    let boolean = [];
-    let nulle = [];
-    let undefined = [];
-    let array= [];
-    let date = [];
-
-    for (let i = 0; i < array.lenght; i++){
-        console.log(typeof array[i]);
-    }
+const sorting = (newArray) => {
     
+    let sortedArray = {
+        object: [],
+        number: [],
+        string: [],
+        boolean: [],
+        null: [],
+        undefined: [],
+        array: [],
+        date: []
+    };
+  
+    for (let i = 0; i < newArray.length; i++) {
+
+
+        if (newArray[i] === null) {
+            sortedArray.null.push(null);
+        } else {
+             if (Array.isArray(newArray[i])) {
+               sortedArray.array.push(newArray[i]);
+             } else {
+                if (
+                  newArray[i] instanceof Date &&
+                  !isNaN(newArray[i])
+                ) {
+                  sortedArray.date.push(newArray[i]);
+                 } 
+                else {
+                    sortedArray[typeof newArray[i]].push(newArray[i]);
+
+                 }
+             }
+             
+        }
+           
+        
+    console.log(sortedArray);
+
+    }
 }
 
-sorting(arr);
+    sorting(arr);

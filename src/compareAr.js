@@ -34,7 +34,7 @@ function intersectionIndexes(compareItemsFn, length1, length2) {
         b++;
     }
   }
-  console.log(intersectionArray);
+  // console.log(intersectionArray);
 
   return intersectionArray;
 }
