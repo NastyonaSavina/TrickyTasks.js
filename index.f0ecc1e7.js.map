@@ -1,0 +1,1 @@
+{"mappings":"AAG+BA,KAAKC","sources":["src/toString.js"],"sourcesContent":["const test = (x) => `${x}` !== `${x}`;\n\n\nconst uniqueItem = { toString: Math.random };\n\n\n\n// console.log(test(uniqueItem));\n\n"],"names":["Math","random"],"version":3,"file":"index.f0ecc1e7.js.map"}
