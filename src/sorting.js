@@ -67,9 +67,10 @@ const sorting = (newArray) => {
         }
            
         
-    console.log(sortedArray);
 
     }
+    // console.log(sortedArray);
+    return sortedArray;
 }
 
     sorting(arr);
