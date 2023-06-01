@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAqBA,IAKT,SAHRC,QAAQC,IAAK,kBAAkBC,KAAKH","sources":["src/codeware/isNumberValidate.js"],"sourcesContent":["function validatePIN(pin) {\n\n    console.log( /^(\\d{4}|\\d{6})$/.test(pin))\n}\n\nvalidatePIN('-12345');\n"],"names":["pin","console","log","test"],"version":3,"file":"index.3d5e741e.js.map"}
