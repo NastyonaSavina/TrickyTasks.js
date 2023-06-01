@@ -5,7 +5,7 @@ const uniqueItem = { toString: Math.random };
 
 
 
-console.log(test(uniqueItem));
+// console.log(test(uniqueItem));
 
 
 
