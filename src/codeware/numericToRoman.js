@@ -17,10 +17,9 @@ function solution(number) {
     I: 1,
   };
 
-  var ans = '';
+  let ans = '';
   while (number > 0) {
     for (a in roman) {
-        console.log(roman[a]);
       if (roman[a] <= number) {
         ans += a;
         number -= roman[a];
@@ -28,9 +27,10 @@ function solution(number) {
       }
     }
   }
-  console.log(ans);
+  return ans;
 }
 
 
 
 solution(1918);
+
