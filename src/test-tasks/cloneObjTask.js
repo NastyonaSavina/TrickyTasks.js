@@ -7,7 +7,6 @@ const cloneDeep = require('clone-deep');
 const obj1 = { a: [2, 3], b: [4] };
 
 const copyObj1 = { ...obj1 };
-console.log(copyObj1);
 
 const first = { propA: 5, propB: 10, propC: 50 };
 const second = { propC: 15, propD: 20 };
@@ -24,7 +23,7 @@ const third = { ...second, ...first };
 // 1 -  использовать JSON.stringify - JSON.parse для конвертирования обьектва в строку и потом обратно. Имеет ограничения по копированию методов и symbols
 
 const newObj = JSON.stringify(obj1);
-console.log(JSON.parse(newObj));
+// console.log(JSON.parse(newObj));
 
 // 2 - написать или использовать из библиотеки функцию deepClone которая будет рекурсивно проходить по ключам обьекта и копировать их в новый обьект
 //npm i clone-deep
